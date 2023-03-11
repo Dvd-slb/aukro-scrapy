@@ -9,4 +9,14 @@ import scrapy
 class AukroItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    name = scrapy.Field()
+    link = scrapy.Field()
+    category = scrapy.Field()
+    dead_line = scrapy.Field()
+    max_bid = scrapy.Field()
+    total_price = scrapy.Field()
+    top_item_id = scrapy.Field()
+    top_item_price = scrapy.Field()
+    top_item_quantity = scrapy.Field()
+    top_item_description = scrapy.Field()
+    top_item_img = scrapy.Field()
