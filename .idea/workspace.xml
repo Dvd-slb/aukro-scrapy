@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f34410ef-ad9f-4297-b30a-aed033f7b6ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/aukro/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aukro/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/aukro/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aukro/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/aukro/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aukro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/aukro/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aukro/spiders/aukro.py" beforeDir="false" afterPath="$PROJECT_DIR$/aukro/spiders/aukro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aukro/test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +35,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\slabo\Documents\Python\PyCharm\scrapy\aukro\aukro" />
+      <recent name="C:\Users\slabo\Documents\Python\PyCharm\scrapy\aukro\aukro\aukro" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

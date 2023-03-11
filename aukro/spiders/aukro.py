@@ -1,3 +1,4 @@
+import datetime
 import re
 import scrapy
 from ..items import AukroItem
@@ -21,11 +22,10 @@ class AukroSpider(scrapy.Spider):
     def detail_parse(self, response):
         items = AukroItem()
         max_bid = ""
-
         name = response.css(".md\:tw-mr-20::text").re(r"#\w+")[0]
         link = response.url
         category = response.css("tbody td::text").getall()[0] + " a " + response.css("tbody td::text").getall()[3]
-        dead_line = response.css(".text-bold::text").get()
+        dead_line = self.dead_line(response)
         max_bid_info = response.css(".tw-text-5xl::text").get()
         for x in max_bid_info:
             if x.isnumeric():
@@ -53,6 +53,16 @@ class AukroSpider(scrapy.Spider):
         items["top_item_img"] = top_item_img
 
         yield items
+
+    def dead_line(self, response):
+        time = response.css(".text-bold::text").get()
+        dt_time = ""
+        date_format = "%d.%m.%Y,%H:%M:%S"
+        time_list = time.split()
+        for i in time_list:
+            if not i.isalpha():
+                dt_time += i
+        return datetime.datetime.strptime(dt_time, date_format)
 
     def top_item_info(self, response):
         most_price = response.css("div.plt-product-desc p::text").re(r"Původní cena:.*?K")
